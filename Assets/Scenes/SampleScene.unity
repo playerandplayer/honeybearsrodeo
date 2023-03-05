@@ -4011,6 +4011,8 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4084,6 +4086,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c317c420b8c483499a6a2b938276417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 5
+  moveSpeed: 10
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61655b8e71e8cd43a8f4102106add59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windForce: 10
+  windButton: 32
 --- !u!1 &977227834
 GameObject:
   m_ObjectHideFlags: 0
@@ -8915,6 +8945,8 @@ GameObject:
   - component: {fileID: 4067206774954162948}
   - component: {fileID: 5749463422681017021}
   - component: {fileID: 1444986867409934216}
+  - component: {fileID: 5749463422681017023}
+  - component: {fileID: 5749463422681017022}
   m_Layer: 0
   m_Name: Torus
   m_TagString: Untagged
@@ -9060,6 +9092,8 @@ GameObject:
   - component: {fileID: 1306037355741968609}
   - component: {fileID: 7324075136634022232}
   - component: {fileID: 4495712740476015725}
+  - component: {fileID: 7324075136634022234}
+  - component: {fileID: 7324075136634022233}
   m_Layer: 0
   m_Name: Torus
   m_TagString: Untagged
@@ -9404,6 +9438,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5101609717718200525}
+  - component: {fileID: 5586539066489727609}
+  - component: {fileID: 5586539066489727608}
   m_Layer: 0
   m_Name: slushie
   m_TagString: Untagged
@@ -9411,6 +9447,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &5586539066489727608
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5586539066489727607}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &5586539066489727609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5586539066489727607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7272949, y: 3.186171, z: 1}
+  m_Center: {x: -0.042854942, y: 1.0930852, z: 0}
 --- !u!33 &5749463422681017021
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9419,6 +9484,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775420356968212830}
   m_Mesh: {fileID: -8803937527578110353, guid: a1db210a43724fb40b7f8769aa8fff94, type: 3}
+--- !u!54 &5749463422681017022
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775420356968212830}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &5749463422681017023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775420356968212830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024999999, y: 0.024999995, z: 0.004999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6267950620093734901
 GameObject:
   m_ObjectHideFlags: 0
@@ -9492,6 +9586,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2354465310526270139}
   m_Mesh: {fileID: -8803937527578110353, guid: e2de09e2c1692374987b017131dd57d6, type: 3}
+--- !u!54 &7324075136634022233
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2354465310526270139}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7324075136634022234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2354465310526270139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024999999, y: 0.024999995, z: 0.004999999}
+  m_Center: {x: 0, y: -0.000000029802322, z: 0.0000000018626451}
 --- !u!1 &7702940095764622744
 GameObject:
   m_ObjectHideFlags: 0
@@ -9503,6 +9626,8 @@ GameObject:
   - component: {fileID: 6365011803716452290}
   - component: {fileID: 3453905793556639355}
   - component: {fileID: 8370239413783450446}
+  - component: {fileID: 8370239413783450448}
+  - component: {fileID: 8370239413783450447}
   m_Layer: 0
   m_Name: Torus
   m_TagString: Untagged
@@ -9585,6 +9710,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8370239413783450447
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702940095764622744}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8370239413783450448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702940095764622744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024999999, y: 0.024999995, z: 0.004999999}
+  m_Center: {x: 0, y: -0.000000029802322, z: 0}
 --- !u!4 &8636090169134909098
 Transform:
   m_ObjectHideFlags: 0
