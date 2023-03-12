@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OfficeControl : MonoBehaviour
 {
-    public float rotateSpeed = 5f;
+    public float rotateSpeed = 1f;
 
     void Update()
     {
